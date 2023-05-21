@@ -10,12 +10,13 @@ import pdfminer
 from pdfminer.high_level import extract_text
 import re
 from openpyxl import Workbook, load_workbook
+import matplotlib as plt 
 # If you need to get the column letter, also import this
 from openpyxl.utils import get_column_letter
 
 
 pst_org = "PASTAORG"
-
+variab_test = 1
 
 df = pd.read_excel('C:\\Users\\User\\Python_projects\\LeitorNF\\BASENOTASNFE.xlsx', sheet_name= 'BASENOTAS', dtype= {'Notas': 'object','TP' : 'object','IC':'object','origem':'object'})
 df = df.iloc[:,:4]
